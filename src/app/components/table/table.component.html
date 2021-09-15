@@ -1,0 +1,47 @@
+<div class="card mb-5 border-0" #Table>
+  <div class="table-responsive mb-0">
+    <table class="table table-borderless table-hover mb-5">
+      <thead>
+        <tr>
+          <th scope="col">Photo</th>
+          <th scope="col">Name</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Nat</th>
+          <th scope="col">Email</th>
+          <th scope="col">
+            <div
+              class="
+                w-100
+                d-flex
+                flex-row
+                justify-content-between
+                align-items-end
+                ml-2
+                pr-2
+              "
+            >
+              Estado
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="text-muted">
+        <tr *ngFor="let people of peopleList">
+          <td>
+            <img [src]="people.picture.thumbnail" alt="" />
+          </td>
+          <td>{{ people.name.first }} {{ people.name.last }}</td>
+          <td>
+            {{ people.gender }}
+          </td>
+          <td>
+            {{ people.nat }}
+          </td>
+          <td>
+            {{ people.email }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="mt-5 d-flex flex-column container">
+  <div class="d-flex justify-content-between">
+    <h1 class="ml-3">People List</h1>
+    <button class="btn btn-warning" (click)="lookCards()">Look Cards</button>
+  </div>
+  <div *ngIf="!showCard">
+    <app-table></app-table>
+  </div>
+  <div *ngIf="showCard" class="card-container container">
+    <app-card *ngFor="let people of peopleList" [people]="people"></app-card>
+  </div>
+</div>

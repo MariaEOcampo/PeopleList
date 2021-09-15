@@ -1,0 +1,92 @@
+
+table tbody tr td:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+table tr th:first-child {
+    border-top-left-radius: 5px;
+
+}
+table tr th:last-child {
+    border-top-right-radius: 5px;
+
+}
+
+
+table tbody tr td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table tbody td {
+   
+    padding: 15px;   
+    font-size: 0.9rem;      
+}
+
+
+
+.first-row {
+    font-size: 12px;
+  
+}
+
+.modal-rows{
+
+    font-size: 11px;
+}
+
+.modal-rows div {
+    margin-left: 6px;
+    margin-bottom: 2px;
+}
+
+thead {
+    background: red;
+}
+
+thead th {
+    color: #fff;
+}
+
+.download{
+ 
+    cursor: pointer;
+}
+
+.modal-body span {
+    color: red; 
+    cursor: pointer;
+
+}
+
+ng-template {
+    width: 900px !important;
+}
+
+.estado {
+    font-size: 0.8rem;
+}
+
+.btn-download{
+   border:none;
+    background-color: transparent;
+}
+
+.material-icons{
+    font-size: 24px!important;
+    padding:3.9px;
+    color: #fff;
+    width:32px!important;
+    margin-top: 3px;
+}
+.span-btn{
+    display: block;
+}
+
+.disabled-download {
+    opacity:0.5 ;
+    pointer-events: none;
+}
